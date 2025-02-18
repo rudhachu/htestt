@@ -1,5 +1,5 @@
 {
-  "name": "whatsapp-bot",
+  "name": "rudhra-bot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,10 +7,10 @@
     "start": "pm2 start . --attach --name bot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Shahid",
+  "author": "princerudh",
   "license": "ISC",
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.7.4",
+    "@whiskeysockets/baileys": "github:princerudh/Baileys.js",
     "browser-id3-writer": "^4.4.0",
     "express": "latest",
     "cheerio": "^1.0.0-rc.10",
