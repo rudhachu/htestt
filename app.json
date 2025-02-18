@@ -1,0 +1,65 @@
+{
+    "name": "Zeta",
+    "version":"1.0.0",
+    "description": "Zeta-XD Multi Device whatsappbot",
+    "logo": "https://i.imgur.com/MCkdz2x.jpeg",
+    "keywords": ["whatsapp"],
+    "repository": "https://github.com/Kingbadan321/Zeta-XD",
+    "website": "https://github.com/Kingbadan321/Zeta-XD",
+    "success_url": "/",
+    "stack": "container",
+    "env": {
+        "HANDLER": {
+            "description": "handler for bot. all so can be null or false",
+            "required": true,
+            "value":"null"
+        },
+        "SESSION": {
+            "description": "session id",
+            "required": true
+        },
+        "MODE": {
+            "description": "worker type public or private",
+            "required": true,
+            "value":"private"
+        },
+        "HEROKU_APP_NAME": {
+            "description": "heroku app name, same as above entered",
+            "required": true
+        },
+        "HEROKU_API_KEY": {
+            "description": "Heroku account api key, https://dashboard.heroku.com/account",
+            "required": true
+        },
+        "SUDO": {
+            "description": "owner number of the bot",
+            "required": false,
+            "value":"4915252819677"
+        },
+        "READ_MSG": {
+            "description": "Read all messages",
+            "required": false,
+            "value":"false"
+        },
+        "READ_CMD": {
+            "description": "Read all commands",
+            "required": false,
+            "value":"false"
+        },
+        "ANTI_DELETE": {
+            "description": "to get deleted messages",
+            "required": true,
+            "value":"true"
+        },
+        "WARN_COUNT": {
+            "description": "warn a user",
+            "required": true,
+            "value":"4"
+        }
+    },
+      "addons": [{ "plan": "heroku-postgresql" }],
+      "buildpacks": [
+                    { "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" },
+                    { "url": "https://github.com/carlosdommor/heroku-buildpack-ffmpeg-latest" }
+    ]
+  }
