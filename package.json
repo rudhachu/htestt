@@ -8,8 +8,8 @@
     "start": "pm2 start . --attach --name rudhra",
     "stop": "pm2 stop rudhra"
     },
-    "engines": {
-        "node": ">=18.0.0 <=22.x"
+  "engines": {
+    "node": ">=18.0.0 <=22.x"
     },
   "author": "princerudh",
   "license": "GPL-3.0-or-later",
@@ -34,6 +34,7 @@
     "qrcode-terminal": "^0.12.0",
     "sequelize": "^6.23.0",
     "simple-git": "^3.7.1",
+    "sharp": "^0.33.5",
     "sqlite3": "^5.1.7"
   }
 }
