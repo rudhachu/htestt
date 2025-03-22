@@ -3,7 +3,7 @@ const util = require("util");
 const config = require("../config");
 
 
-lib.Badan({ pattern:'eval', on: "text", fromMe: true, desc :'Runs a server code'}, async (message, match) => {
+lib.rudhra({ pattern:'eval', on: "text", fromMe: true, desc :'Runs a server code'}, async (message, match) => {
   if (message.text.startsWith(">")) {
     const m = message;
     try {
@@ -16,7 +16,7 @@ lib.Badan({ pattern:'eval', on: "text", fromMe: true, desc :'Runs a server code'
   }
 });
 
-lib.Badan({ pattern:'eval2', on: "text", fromMe: true, desc :'Runs a server code'}, async (message, match) => {
+lib.rudhra({ pattern:'eval2', on: "text", fromMe: true, desc :'Runs a server code'}, async (message, match) => {
   if (message.text.startsWith("~")) {
     const m = message;
     try {
