@@ -1,7 +1,7 @@
-const { Badan, mode, formatTime, numToJid, setWarn, removeWarn } = require('../lib/');
+const { rudhra, mode, formatTime, numToJid, setWarn, removeWarn } = require('../lib/');
 const { ANTI_DELETE, SUDO, WARN_COUNT } = require("../config")
 
-Badan({
+rudhra({
 	pattern: 'ping ?(.*)',
 	fromMe: mode,
 	desc: 'Bot response in milliseconds.',
@@ -14,7 +14,7 @@ Badan({
 	await msg.edit(`*ρonɠ*\n*${responseTime} ɱș*`);
 });
 
-Badan({
+rudhra({
 	pattern: 'jid',
 	fromMe: mode,
 	desc: 'To get remoteJid',
@@ -24,7 +24,7 @@ Badan({
 });
 
 
-Badan({
+rudhra({
 	pattern: 'uptime',
 	fromMe: mode,
 	desc: 'Get bots runtime',
@@ -33,7 +33,7 @@ Badan({
 	await message.reply(formatTime(process.uptime()));
 })
 
-Badan({
+rudhra({
 	on: "delete",
 	fromMe: false,
 	desc: 'anti delete',
@@ -48,7 +48,7 @@ Badan({
 	}
 });
 
-Badan({
+rudhra({
 	pattern: 'warn',
 	fromMe: true,
 	desc: 'To get remoteJid',
@@ -57,7 +57,7 @@ Badan({
 	await setWarn(message, match, WARN_COUNT)
 });
 
-Badan({
+rudhra({
 	pattern: 'resetwarn',
 	fromMe: true,
 	desc: 'To get remoteJid',
