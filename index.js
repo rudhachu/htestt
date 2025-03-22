@@ -1,4 +1,4 @@
-const client = require('./lib/Client')
+const client = require('./lib/client')
 
 const connect = async () => {
 	try {
