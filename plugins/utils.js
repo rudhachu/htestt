@@ -1,7 +1,7 @@
-const { Badan, mode, sendUrl } = require('../lib/');
+const { rudhra, mode, sendUrl } = require('../lib/');
 const { setMessage, getMessage, delMessage, getStatus, toggleStatus } = require("../lib/database");
 
-Badan({
+rudhra({
 	pattern: "alive",
         fromMe: mode,
         desc: "alive message",
@@ -24,7 +24,7 @@ Badan({
 	}
 });
 
-Badan({
+rudhra({
     pattern: "mention",
     fromMe: true,
     desc: "mention message",
@@ -59,7 +59,7 @@ Badan({
   }
 );
 
-Badan({
+rudhra({
 	on: "all",
 	fromMe: false,
 	dontAddCommandList: true,
@@ -77,7 +77,7 @@ Badan({
 	   }
    });
 
-Badan({
+rudhra({
 	pattern: "url",
         fromMe: mode,
         desc: "alive message",
@@ -88,7 +88,7 @@ if (!["videoMessage", "imageMessage", "stickerMessage", "audioMessage"].includes
 await sendUrl(message, message.reply_message)
 });
 
-Badan({
+rudhra({
     pattern: "welcome",
     fromMe: true,
     desc: "welcome message",
@@ -123,7 +123,7 @@ Badan({
   }
 );
 
-Badan({
+rudhra({
     pattern: "goodbye",
     fromMe: true,
     desc: "goodbye message",
