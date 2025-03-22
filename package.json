@@ -14,7 +14,7 @@
   "author": "princerudh",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "@whiskeysockets/baileys": "github:princerudh/Baileys.js",
+    "@whiskeysockets/baileys": "github:princerudh/Bailey",
     "browser-id3-writer": "^5.0.0",
     "cheerio": "^1.0.0-rc.12",
     "crypto-js": "^4.2.0",
