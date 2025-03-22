@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "node -e \"try { require('sharp') } catch (e) { process.exit(1); }\" || yarn add --ignore-engines sharp@0.33.5",
-        "start": "pm2 start . --attach --name rudhra",
-        "stop": "pm2 stop rudhra"
+    "start": "pm2 start . --attach --name rudhra",
+    "stop": "pm2 stop rudhra"
     },
     "engines": {
         "node": ">=18.0.0 <=22.x"
